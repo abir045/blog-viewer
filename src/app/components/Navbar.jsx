@@ -17,10 +17,6 @@ const Navbar = async () => {
         <Link href={"/"}>Home</Link>
       </li>
 
-      <li>
-        <Link href={"/profile"}> Profile</Link>
-      </li>
-
       {user ? (
         <li>
           <LogoutLink>Log out</LogoutLink>
@@ -33,6 +29,9 @@ const Navbar = async () => {
 
           <li>
             <RegisterLink>Sign up</RegisterLink>
+          </li>
+          <li>
+            <Link href={"/profile"}> Profile</Link>
           </li>
         </>
       )}
@@ -72,9 +71,9 @@ const Navbar = async () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
         </div>
-        <div className="navbar-end">
+        {/* <div className="navbar-end">
           <a className="btn">Button</a>
-        </div>
+        </div> */}
       </div>
     </div>
   );
