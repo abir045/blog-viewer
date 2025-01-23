@@ -16,6 +16,9 @@ const Navbar = async () => {
       <li>
         <Link href={"/"}>Home</Link>
       </li>
+      <li>
+        <Link href={"/profile"}> Profile</Link>
+      </li>
 
       {user ? (
         <li>
@@ -29,9 +32,6 @@ const Navbar = async () => {
 
           <li>
             <RegisterLink>Sign up</RegisterLink>
-          </li>
-          <li>
-            <Link href={"/profile"}> Profile</Link>
           </li>
         </>
       )}
